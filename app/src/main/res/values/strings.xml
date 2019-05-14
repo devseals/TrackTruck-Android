@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TrackTruck</string>
+    <string name="login">Login General</string>
+    <string name="title_activity_login_tab">LoginTabActivity</string>
+    <string name="tab_text_1">Cliente</string>
+    <string name="tab_text_2">Dueño</string>
+    <string name="tab_text_3">Trabajador</string>
+    <string name="tab_text_4">Ubicacion</string>
+    <string name="tab_text_5">Comentarios</string>
+    <string name="hint_username">Usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_food_truck_tab">FoodTruckTabActivity</string>
+    <string name="Register"><u>Register</u></string>
+</resources>
