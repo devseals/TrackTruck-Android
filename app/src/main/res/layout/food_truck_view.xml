@@ -20,7 +20,7 @@
           android:background="@color/ColorPrimaryLight"
           android:visibility="visible"/>
     <TextView
-            android:text="Costo Promedio"
+            android:text="Costo Promedio: "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/foodtruckNameViewLbl" android:layout_marginTop="32dp"
@@ -30,7 +30,7 @@
             android:textSize="14sp"/>
 
     <TextView
-            android:text="Tipo de Comida"
+            android:text="Tipo de Comida: "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/foodTypeViewLbl" android:layout_marginTop="8dp"
