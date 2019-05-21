@@ -19,16 +19,16 @@ import com.example.tracktruck.adapters.ReviewRecycleAdapter
 import com.example.tracktruck.models.Review
 import com.example.tracktruck.services.*
 import kotlinx.android.synthetic.main.activity_reviews.*
+import kotlinx.android.synthetic.main.food_truck_view.*
 
 
 class ReviewsFragment : Fragment() {
 
-    private var foodtruckId:Int= 0
+    private var foodtruckId:Int= 9
     private var reviews = ArrayList<Review>()
     val foodtruckService = FoodtrucksService()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        //foodtruckId = activity!!.intent.getIntExtra("foodtruckId",9)
         val listener = object : ReviewsDownloaded {
             override fun success(success: Boolean) {
                 if (success){
@@ -44,7 +44,6 @@ class ReviewsFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-
 
         super.onViewCreated(view, savedInstanceState)
         fab.setOnClickListener { view ->

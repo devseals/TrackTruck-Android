@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.tracktruck.models.Review
 import com.example.tracktruck.R
 import kotlinx.android.synthetic.main.card_review.view.*
+import kotlinx.android.synthetic.main.food_truck_view.*
 
 class ReviewRecycleAdapter(val reviews : ArrayList<Review>):RecyclerView.Adapter<ReviewRecycleAdapter.ViewHolder>(){
 
@@ -28,7 +29,6 @@ class ReviewRecycleAdapter(val reviews : ArrayList<Review>):RecyclerView.Adapter
         val reviewDate: TextView = view.reviewDate
 
         fun bind(review: Review){
-
             reviewUser.text = review.name
             reviewContent.text = review.content
             reviewTitle.text = review.title

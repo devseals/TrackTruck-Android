@@ -22,21 +22,32 @@
                   android:label="Register"
                   android:theme="@style/FoodTruckViewTheme">
         </activity>
-        <activity android:name=".activities.CreateEmployeeActivity">
+
+        <activity android:name=".activities.CreateEmployeeActivity"
+                  android:label="Añadir Empleado"
+                  android:theme="@style/FoodTruckViewTheme">
         </activity>
-        <activity android:name=".activities.CreateFoodtruckActivity">
+
+        <activity android:name=".activities.CreateFoodtruckActivity"
+                  android:label="Añadir FoodTruck"
+                  android:theme="@style/FoodTruckViewTheme">
         </activity>
         <activity
                 android:name=".activities.FoodTruckMapAcitivity"
                 android:label="Location"
                 android:theme="@style/FoodTruckViewTheme">
         </activity>
+
         <activity
                 android:name=".activities.CreateSaleActivity"
                 android:theme="@style/FoodTruckViewTheme">
         </activity>
-        <activity android:name=".activities.SalesActivity">
+
+        <activity android:name=".activities.SalesActivity"
+                  android:label="Ventas"
+                  android:theme="@style/FoodTruckViewTheme">
         </activity>
+
         <activity
                 android:name=".activities.AdministrativeActivity"
                 android:theme="@style/FoodTruckViewTheme">

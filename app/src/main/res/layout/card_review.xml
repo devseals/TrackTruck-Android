@@ -6,7 +6,7 @@
                                                    android:id="@+id/contentReview"
                                                    app:cardElevation="5dp"
                                                    app:cardCornerRadius="10dp"
-                                                   android:layout_marginTop="8dp"
+                                                   android:layout_marginTop="12dp"
                                                    android:layout_marginStart="8dp"
                                                    android:layout_marginEnd="8dp">
 
