@@ -30,7 +30,8 @@ class CreateFoodtruckActivity : AppCompatActivity() {
                 truckType.editText?.text.toString(),
                 truckPrice.editText?.text.toString().toDouble(),
                 truckLatitude.editText?.text.toString().toDouble(),
-                truckLongitude.editText?.text.toString().toDouble()
+                truckLongitude.editText?.text.toString().toDouble(),
+                truckPhone.editText?.text.toString()
             )
             startActivity(Intent(view.context, MainActivity::class.java))
         }else{
