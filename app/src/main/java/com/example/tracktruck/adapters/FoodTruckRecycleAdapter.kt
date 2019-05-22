@@ -49,7 +49,7 @@ class FoodTruckRecycleAdapter(val foodtrucks: ArrayList<Foodtruck> ): RecyclerVi
             //foodtruckImageview?.setImageResource(resourseId)
 
             foodtruckNameTextview?.text = foodtruck.name
-            avgCostTextView?.text = foodtruck.avg_price.toString()
+            avgCostTextView?.text = "S/ " + foodtruck.avg_price.toString()
             foodTypeTextView?.text = foodtruck.food_type
 
             contentItem.setOnClickListener{

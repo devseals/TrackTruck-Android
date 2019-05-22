@@ -41,7 +41,7 @@ class FoodTruckActivity : AppCompatActivity(){
             latitude = getDouble("latitude")
             longitude = getDouble("longitude")
             foodTypeViewText.text=getString("food_type")
-            avgCostViewText.text=getDouble("avg_price").toString()
+            avgCostViewText.text="S/ " + getDouble("avg_price").toString()
             foodtruckId= getInt("foodtruck_id")
 
         }

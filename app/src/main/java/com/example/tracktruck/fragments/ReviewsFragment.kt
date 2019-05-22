@@ -24,7 +24,7 @@ import kotlinx.android.synthetic.main.food_truck_view.*
 
 class ReviewsFragment : Fragment() {
 
-    private var foodtruckId:Int= 9
+    private var foodtruckId: Int = 0
     private var reviews = ArrayList<Review>()
     val foodtruckService = FoodtrucksService()
 
@@ -35,6 +35,10 @@ class ReviewsFragment : Fragment() {
                     setUpRecycler()
                 }
             }
+        }
+
+        activity?.intent?.extras?.apply{
+            foodtruckId= getInt("foodtruck_id")
         }
 
         reviews = foodtruckService.downloadReviews(context,foodtruckId, listener)
