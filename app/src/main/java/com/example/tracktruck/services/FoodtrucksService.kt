@@ -44,8 +44,9 @@ class FoodtrucksService {
                         val food_type: String= foodtruck.getString("food_type")
                         val owner_id:Int= foodtruck.getJSONObject("owners").getInt("owner_id")
                         val avg_price:Double = foodtruck.getDouble("avg_price")
+                        val phone:String = foodtruck.getString("phone_number")
 
-                        val newFoodtruck = Foodtruck(id,latitude,longitude,name,food_type,owner_id,avg_price)
+                        val newFoodtruck = Foodtruck(id,latitude,longitude,name,food_type,owner_id,avg_price,phone)
                         getFoodTrucks.add(newFoodtruck)
 
                     }
@@ -165,7 +166,7 @@ class FoodtrucksService {
         Volley.newRequestQueue(context).add(reviewRequest)
     }
 
-    fun createTruck(context: Context, name: String, food_type: String, avg_price: Double, latitude: Double, longitude:Double){
+    fun createTruck(context: Context, name: String, food_type: String, avg_price: Double, latitude: Double, longitude:Double, phone: String){
 
         val jsonBody = JSONObject()
         jsonBody.put("name", name)
@@ -174,6 +175,7 @@ class FoodtrucksService {
         jsonBody.put("latitude", latitude)
         jsonBody.put("longitude", longitude)
         jsonBody.put("avg_price", avg_price)
+        jsonBody.put("phone_number",phone)
         val requestBody = jsonBody.toString()
 
         val createRequest = object : JsonObjectRequest(Method.POST, REGISTER_FOODTRUCK,null , Response.Listener {
