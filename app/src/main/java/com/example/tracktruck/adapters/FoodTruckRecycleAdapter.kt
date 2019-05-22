@@ -61,6 +61,7 @@ class FoodTruckRecycleAdapter(val foodtrucks: ArrayList<Foodtruck> ): RecyclerVi
                     putDouble("longitude", foodtruck.longitude)
                     putDouble("avg_price", foodtruck.avg_price)
                     putInt("foodtruck_id", foodtruck.id)
+                    putString("phone_number",foodtruck.phone)
                 }
 
                 val intent = Intent(it.context, FoodTruckActivity::class.java)
