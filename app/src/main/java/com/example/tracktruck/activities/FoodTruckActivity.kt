@@ -43,7 +43,7 @@ class FoodTruckActivity : AppCompatActivity(){
             foodTypeViewText.text=getString("food_type")
             avgCostViewText.text="S/ " + getDouble("avg_price").toString()
             foodtruckId= getInt("foodtruck_id")
-
+            phoneNumbertext.text=getString("phone_number")
         }
 
         setSupportActionBar(toolbar2)
