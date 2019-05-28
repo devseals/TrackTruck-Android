@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import com.example.tracktruck.R
 import com.example.tracktruck.services.*
 import kotlinx.android.synthetic.main.activity_create_food_truck.*
@@ -33,7 +34,8 @@ class CreateFoodtruckActivity : AppCompatActivity() {
                 truckLongitude.editText?.text.toString().toDouble(),
                 truckPhone.editText?.text.toString()
             )
-            startActivity(Intent(view.context, MainActivity::class.java))
+            startActivity(Intent(view.context, AdministrativeActivity::class.java))
+            Toast.makeText(this,"Se agregó foodtruck exitosamente", Toast.LENGTH_LONG).show()
         }else{
             startActivity(Intent(this, LoginTabActivity::class.java))
         }

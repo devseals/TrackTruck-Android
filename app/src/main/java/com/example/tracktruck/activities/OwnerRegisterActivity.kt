@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import com.example.tracktruck.R
 import com.example.tracktruck.services.*
 import kotlinx.android.synthetic.main.activity_owner_register.*
@@ -29,5 +30,6 @@ class OwnerRegisterActivity : AppCompatActivity() {
         )
         val intent= Intent(this,LoginTabActivity::class.java)
         startActivity(intent)
+        Toast.makeText(this,"Se registro exitosamente", Toast.LENGTH_LONG).show()
     }
 }

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import com.example.tracktruck.R
 import com.example.tracktruck.services.FoodtrucksService
 import kotlinx.android.synthetic.main.activity_create_sale.*
@@ -24,7 +25,8 @@ class CreateSaleActivity : AppCompatActivity() {
     fun createSale(view: View){
         ftServ.createSale(view.context, saleRegistryAmount?.editText?.text.toString().toDouble(),
             saleRegistryContent?.editText?.text.toString())
-        startActivity(Intent(view.context, MainActivity::class.java))
+        startActivity(Intent(view.context, CreateSaleActivity::class.java))
+        Toast.makeText(this,"Se agregó sale exitosamente", Toast.LENGTH_LONG).show()
     }
 
 }

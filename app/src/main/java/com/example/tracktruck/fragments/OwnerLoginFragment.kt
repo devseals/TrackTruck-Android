@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.example.tracktruck.services.*
 import com.example.tracktruck.R
 import com.example.tracktruck.activities.AdministrativeActivity
@@ -44,11 +45,13 @@ class OwnerLoginFragment : Fragment() {
         authServ.logOwner(view.context, ownerUserTxt?.editText?.text.toString(), ownerPassTxt?.editText?.text.toString())
         if(DataServiceO.isLogged) {
             startActivity(Intent(view.context, AdministrativeActivity::class.java))
+            Toast.makeText(context,"Inicio sesión exitosamente", Toast.LENGTH_LONG).show()
         }
     }
     fun register(view: View){
         val intent = Intent(context, OwnerRegisterActivity::class.java)
         startActivity(intent)
+
     }
 }
 

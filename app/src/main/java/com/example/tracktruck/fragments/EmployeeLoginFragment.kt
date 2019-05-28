@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.example.tracktruck.services.*
 import com.example.tracktruck.R
 import com.example.tracktruck.activities.CreateSaleActivity
@@ -40,6 +41,7 @@ class EmployeeLoginFragment : Fragment() {
             employeePassTxt?.editText?.text.toString())
         if(DataServiceE.isLogged) {
             startActivity(Intent(view.context, CreateSaleActivity::class.java))
+            Toast.makeText(context,"Inicio sesión exitosamente", Toast.LENGTH_LONG).show()
         }
     }
 
