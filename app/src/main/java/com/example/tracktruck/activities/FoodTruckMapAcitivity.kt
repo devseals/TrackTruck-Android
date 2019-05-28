@@ -22,12 +22,14 @@ class FoodTruckMapAcitivity : AppCompatActivity(), OnMapReadyCallback {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_food_truck_map_acitivity)
         intent?.extras?.apply {
+            foodtruckName = getString("name")
             latitude = getDouble("latitude")
             longitude = getDouble("longitude")
         }
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
+        setTitle("Ubicado en:")
     }
 
     override fun onMapReady(googleMap: GoogleMap) {
@@ -38,6 +40,11 @@ class FoodTruckMapAcitivity : AppCompatActivity(), OnMapReadyCallback {
         mMap.addMarker(MarkerOptions().position(location).title("Marcador en $foodtruckName"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(location))
         mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL)
+
+        val zoom = CameraUpdateFactory.zoomTo(15f)
+
+        mMap.animateCamera(zoom)
+
         mMap.isTrafficEnabled =  true
         mMap.isIndoorEnabled =   true
         mMap.isBuildingsEnabled = true
