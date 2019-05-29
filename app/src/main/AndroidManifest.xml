@@ -19,7 +19,7 @@
                   android:theme="@style/FoodTruckViewTheme">
         </activity>
         <activity android:name=".activities.OwnerRegisterActivity"
-                  android:label="Register"
+                  android:label="Registro"
                   android:theme="@style/FoodTruckViewTheme">
         </activity>
 
@@ -34,7 +34,7 @@
         </activity>
         <activity
                 android:name=".activities.FoodTruckMapAcitivity"
-                android:label="Location"
+                android:label="Localizacion"
                 android:theme="@style/FoodTruckViewTheme">
         </activity>
 
@@ -75,7 +75,7 @@
         </activity>
         <activity
                 android:name=".activities.CreateReviewActivity"
-                android:label="New Review"
+                android:label="Nuevo Comentario"
                 android:theme="@style/FoodTruckViewTheme">
         </activity>
         <activity android:name=".activities.MainActivity">
