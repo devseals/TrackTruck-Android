@@ -64,7 +64,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:hint="Contrasena"
+            android:hint="Contraseña"
             android:layout_width="0dp"
             android:id="@+id/employeePass"
             android:layout_height="55dp"

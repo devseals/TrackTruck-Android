@@ -54,6 +54,7 @@ class FoodTruckActivity : AppCompatActivity(){
         val intent = Intent(this,FoodTruckMapAcitivity::class.java)
         intent.putExtra("latitude", latitude)
         intent.putExtra("longitude", longitude)
+        intent.putExtra("name", foodtruckName)
         startActivity(intent)
     }
 

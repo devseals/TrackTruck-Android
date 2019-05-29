@@ -15,7 +15,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity android:name=".activities.UserRegisterActivity"
-                  android:label="Register"
+                  android:label="Registro"
                   android:theme="@style/FoodTruckViewTheme">
         </activity>
         <activity android:name=".activities.OwnerRegisterActivity"
