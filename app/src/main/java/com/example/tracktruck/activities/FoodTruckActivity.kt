@@ -43,10 +43,6 @@ class FoodTruckActivity : AppCompatActivity(){
         val actionBar = supportActionBar
         actionBar!!.title = foodtruckName
 
-        val phoneNumbertext = findViewById(R.id.phoneNumbertext) as TextView
-        phoneNumbertext.setOnClickListener{
-            call()
-        }
     }
 
     fun location()
@@ -70,6 +66,11 @@ class FoodTruckActivity : AppCompatActivity(){
         when (item.itemId) {
             R.id.location -> {
                 location()
+                return true
+            }
+
+            R.id.callnumber -> {
+                call()
                 return true
             }
         }

@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto"
-      xmlns:tools="http://schemas.android.com/tools">
+      xmlns:tools="http://schemas.android.com/tools"
+>
     <item
             android:icon="@drawable/ic_navigation_black_24dp"
             android:id="@+id/location"
-            android:title="profile"
-            app:showAsAction="always"/>
+            android:title="Ubicacion"
+            app:showAsAction="always"
+    />
+
+    <item
+            android:icon="@drawable/ic_phone_black_24dp"
+            android:id="@+id/callnumber"
+            android:title="Llamar"
+            app:showAsAction="always"
+    />
+
+
+
 </menu>
+

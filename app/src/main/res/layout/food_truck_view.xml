@@ -9,8 +9,8 @@
             android:id="@+id/toolbar2"
             android:background="@color/colorPrimary"
             android:elevation="8dp"
-            app:layout_scrollFlags="scroll|snap|enterAlways"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent"
+    />
 
     <View android:id="@+id/rectangle_at_the_top"
           android:layout_width="match_parent"
@@ -73,7 +73,6 @@
             android:id="@+id/phoneNumbertext" app:layout_constraintStart_toEndOf="@+id/phoneNumber"
             android:layout_marginStart="8dp"
             android:textSize="14sp"
-            android:textColor="#00bfff"
             app:layout_constraintTop_toTopOf="@+id/phoneNumber"
             android:clickable="true"/>
 
