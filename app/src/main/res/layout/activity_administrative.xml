@@ -16,7 +16,8 @@
             android:id="@+id/constraintVentas"
             android:layout_marginTop="24dp"
             android:background="@color/cardview_light_background"
-            android:elevation="8dp">
+            android:elevation="4dp"
+            >
 
         <Button
                 android:text="Ventas"
@@ -51,7 +52,7 @@
             android:id="@+id/constraintEmpleados"
             android:layout_marginTop="20dp"
             android:background="@color/cardview_light_background"
-            android:elevation="8dp">
+            android:elevation="4dp">
 
         <Button
                 android:text="Añadir"
@@ -86,7 +87,7 @@
             android:id="@+id/constraintTrucks"
             android:layout_marginTop="20dp"
             android:background="@color/cardview_light_background"
-            android:elevation="8dp">
+            android:elevation="4dp">
 
     <Button
             android:text="Añadir"
